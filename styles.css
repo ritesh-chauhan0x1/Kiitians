@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(45deg, #3a6186, #89253e);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.message-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.message-content {
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+p.important {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.social-links {
+    text-align: center;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 80%;
+    max-width: 280px;
+}
+
+.social-links a:hover {
+    transform: scale(1.05);
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+#instagram-link {
+    background-color: #C13584;
+}
+
+#instagram-link:hover {
+    background-color: #a11d6c;
+}
+
+#github-link {
+    background-color: #333;
+}
+
+#github-link:hover {
+    background-color: #24292e;
+}
+
+.upcoming {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+h2 {
+    color: #2980b9;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+@media (max-width: 480px) {
+    .message-box {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    p.important {
+        font-size: 16px;
+    }
+}

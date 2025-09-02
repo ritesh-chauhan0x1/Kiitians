@@ -1,0 +1,16 @@
+{
+  "name": "KIIT Site Shutdown Notice",
+  "short_name": "KIIT Notice",
+  "description": "Shutdown notice for the KIIT website due to administrative request",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3a6186",
+  "theme_color": "#3a6186",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,29 +1,68 @@
-# Kiitian Finder 😋
-(v1) Find a kiit student `Name`, `Email` and `Student Number` using his/her roll number only.
-(v2) Now you can find staff `Email`, `Social Profiles` and `Institution Mail`.
+# KIIT Site Shutdown Notice
 
-This can be helpful if you need to find some staff or student in case of emergencies OR you are creating a database that includes staff and student details.
+A simple static webpage displaying a shutdown notice for the KIIT website as per administration request.
 
-# How to run? 🤨
+## Description
 
-Make sure you have <a href="https://nodejs.org/en">nodeJS</a> installed. And this requires an active internet connection.
+This project consists of a static webpage that informs visitors about the shutdown of the KIIT website due to administrative requests. It includes a notice, contact information (Instagram), and a teaser for upcoming projects.
 
-Paste this into your favourite terminal.
-```bash
-git clone https://github.com/erucix/kiitian-finder
-cd kiitian-finder
-node kiit.js 220XXXXX # <--this is your kiit roll number
+## Features
+
+- Responsive design for all device sizes
+- Animated message display with typing effect
+- Social media contact links (Instagram and GitHub)
+- Modern UI with gradient background
+
+## Files Structure
+
+```
+kiitians_backend/
+├── index.html        # Main HTML document
+├── styles.css        # CSS stylesheet
+├── script.js         # JavaScript for animations and interactions
+├── README.md         # Documentation
+├── CNAME             # Custom domain configuration for GitHub Pages
+└── .nojekyll         # Disables Jekyll processing on GitHub Pages
 ```
 
-# How to find faculties now? 🤨
+## Deployment Instructions
 
-For getting faculties you need to install some extra modules. Paste this code intor your Commmand Prompt or Terminal to do all in once.
-```bash
-git clone https://github.com/erucix/kiitian-finder
-cd kiitian-finder
-npm install jsdom got
-node faculty.js  # <---- Saves output in faculty.json file.
-```
-**Note**: Running faculty search will cost you some time since we are fetching every staff details from the site. 
+### Local Deployment
 
-⚠️ **Desclaimer**: This is only for recreational and educational purpose and I am in no way responsible for the misconduct done with the use of this program.
+1. Clone the repository or download the files
+2. Open `index.html` in any modern web browser
+
+### GitHub Pages Deployment
+
+1. Create a new GitHub repository
+2. Push all files to the repository
+3. Go to Settings > Pages
+4. Select the branch to deploy (usually `main`)
+5. The site will be published at `https://<username>.github.io/<repository-name>/`
+
+### Custom Domain Deployment
+
+1. Update the `CNAME` file with your domain
+2. Configure your domain's DNS settings:
+   - Add an A record pointing to GitHub Pages IP addresses
+   - OR add a CNAME record pointing to `<username>.github.io`
+
+### Netlify Deployment
+
+1. Sign up for Netlify
+2. Connect your GitHub repository or drag and drop the project folder
+3. Configure build settings (not required for static sites)
+4. Deploy
+
+## Customization
+
+- Update the Instagram username in `script.js`
+- Update the GitHub username in `script.js`
+- Modify colors and styling in `styles.css`
+- Edit messages in `index.html`
+
+## Contact
+
+For any questions, contact on:
+- Instagram: [@riteshchauhan_15](https://instagram.com/riteshchauhan_15)
+- GitHub: [ritesh-chauhan0x1](https://github.com/ritesh-chauhan0x1)
