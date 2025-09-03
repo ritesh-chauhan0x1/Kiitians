@@ -12,6 +12,15 @@ This project consists of a static webpage that informs visitors about the shutdo
 - Animated message display with typing effect
 - Social media contact links (Instagram and GitHub)
 - Modern UI with gradient background
+- Animated upcoming features list
+
+### Planned Features
+- Student In and Out Tracking System
+- CGPA Calculator and Visualization
+- Student Photo Management
+- Enhanced Privacy Controls
+- End-to-End Encrypted Data Storage
+- GDPR Compliant User Profiles
 
 ## Files Structure
 

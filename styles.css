@@ -118,6 +118,47 @@ h2 {
     font-size: 22px;
 }
 
+.upcoming-features {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #2980b9;
+}
+
+.upcoming-features h3 {
+    color: #2980b9;
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.upcoming-features ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.upcoming-features li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.upcoming-features li:hover {
+    transform: translateX(5px);
+}
+
+.upcoming-features i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 480px) {
     .message-box {
         padding: 20px;

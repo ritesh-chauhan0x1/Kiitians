@@ -49,4 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Start the typing effect after a delay
     setTimeout(typeWriter, 1500);
+    
+    // Add staggered animation for the upcoming features
+    const featureItems = document.querySelectorAll('.upcoming-features li');
+    if (featureItems.length > 0) {
+        featureItems.forEach((item, index) => {
+            // Initially hide all items
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-20px)';
+            
+            // Stagger the animation of each item
+            setTimeout(() => {
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                item.style.opacity = '1';
+                item.style.transform = 'translateX(0)';
+            }, 2500 + (index * 300)); // Start after typing effect with 300ms delay between items
+        });
+    }
 });
